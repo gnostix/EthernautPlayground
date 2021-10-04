@@ -1,0 +1,263 @@
+{
+    "name": "EthBoy",
+    "description": "Young Vitalik takes on the role of Picasso’s son Paulo dressed as Harlequin in this artwork but the octahedron Ethereum logo replaces the chequered pattern of the original jester outfit. Leaning against a large chair, the boy genius fiddles with his fingers in a somewhat nervous manner; nevertheless, he stares directly at the viewer with what appears to be a confident, ‘Mona Lisa-like’ smile. Vitalik has no idea what the future has in store for him, but he’s prepared to face any obstacle ahead as he begins life's adventure.     ",
+    "attributes": [
+        {
+            "trait_type": "Artist",
+            "value": "Trevor Jones"
+        },
+        {
+            "trait_type": "Artist",
+            "value": "Alotta Money"
+        },
+        {
+            "trait_type": "Layer Count",
+            "value": 2
+        }
+    ],
+    "async-attributes": {
+        "artists": [
+            "0x6c6e93874216112ef12a0d04e2679ecc6c3625cc",
+            "0xbd9b7373aac15d9a93c810df3999343f4fe1ed88"
+        ]
+    },
+    "tokenType": "master",
+    "layout": {
+        "type": "layered_static",
+        "version": 2,
+        "layers": [
+            {
+                "id": "Background",
+                "uri": "Qmcd8amD9LXAqu3pBhCdfTeuZNGcvqy85uNGVB3M9LvmjZ",
+                "label": "Normal"
+            },
+            {
+                "id": "Scrolling_Background",
+                "relative-position": {
+                    "y": {
+                        "token-id": 1,
+                        "lever-id": 0
+                    },
+                    "x": 0
+                },
+                "uri": "QmTiJUZ7uumEWG7n5EybzXUfWeBuFZB7kbCMdgY9KS73aH",
+                "label": "Normal",
+                "anchor": "Background"
+            },
+            {
+                "id": "Vitalik",
+                "uri": "QmaJ3m2eLQjxxhgWvWyuyENaz8Mm6NtChHkErCeoJfswm1",
+                "label": "Normal",
+                "anchor": "Background"
+            },
+            {
+                "id": "Vitalik_Green",
+                "color": {
+                    "alpha": {
+                        "token-id": 1,
+                        "lever-id": 1
+                    }
+                },
+                "uri": "QmYq4yBKede8SkbqE9DDodPeQydhYRZmEno5jKtuWVi8Fq",
+                "label": "Normal",
+                "anchor": "Background"
+            },
+            {
+                "id": "Vitalik_Red",
+                "color": {
+                    "alpha": {
+                        "token-id": 1,
+                        "lever-id": 2
+                    }
+                },
+                "uri": "QmWHME49ZuhozYxQYydgJND123DoHUS1uYKnGvs3b2orp8",
+                "label": "Normal",
+                "anchor": "Background"
+            },
+            {
+                "id": "Vitalik_Face",
+                "states": {
+                    "options": [
+                        {
+                            "uri": "QmTn6idJU7ZuimJqif9xSqeUCkmherWUCdtc4gVjtc9oEv",
+                            "label": "+3",
+                            "anchor": "Background"
+                        },
+                        {
+                            "uri": "QmPnhkicXLGjchmJG2UB7my2BvjKLvc1S1sFXk5Z6bmNp9",
+                            "label": "+2",
+                            "anchor": "Background"
+                        },
+                        {
+                            "uri": "QmboFimj3h4NofskxyC5Pd2QUHBLRJKJ9au7r9ncKiRhaf",
+                            "label": "+1",
+                            "anchor": "Background"
+                        },
+                        {
+                            "uri": "QmPpZBRToY4pq3gTAw1SrTiB38rPf1D83ZoUSkNSYVsxC5",
+                            "label": "-1",
+                            "anchor": "Background"
+                        },
+                        {
+                            "uri": "QmRt2B87xmuayNPYTc2J3oTHr3Xvetk1b1jYu3h9vt8CQh",
+                            "label": "-2",
+                            "anchor": "Background"
+                        },
+                        {
+                            "uri": "QmX9aiJLyxw27VAt5UEaDNYp9gdf8Z9s65DiM2Z5GTQeM5",
+                            "label": "-3",
+                            "anchor": "Background"
+                        },
+                        {
+                            "uri": "Qmac4neKbx1SQafdNZRCh26A9N1DQAtCMrvXmT8Dy1a8YU",
+                            "label": "0",
+                            "anchor": "Background"
+                        }
+                    ],
+                    "token-id": 1,
+                    "lever-id": 3
+                }
+            },
+            {
+                "id": "Vitalik_Accessories",
+                "states": {
+                    "options": [
+                        {
+                            "uri": "QmP4gqvPcKa9i8GjRBARvdF71fBoYvyFxvcVrEWz5uzshi",
+                            "label": "Alien",
+                            "anchor": "Background"
+                        },
+                        {
+                            "uri": "QmR4uWYBHCBLcK2C2RssbdQsN1DiU8YvBNjtt3F5iJjZoJ",
+                            "label": "Mask",
+                            "anchor": "Background"
+                        },
+                        {
+                            "uri": "QmfGKvYQLw2CDypDg3tm7UiA7Txv1hfmp1NUxhJiy9bSvF",
+                            "label": "Pirate",
+                            "anchor": "Background"
+                        },
+                        {
+                            "uri": "QmPfYnAvK7ZZXjmuwfoyyUo5r2nGMgzyRJZrXAVvgzRfE6",
+                            "label": "Shades",
+                            "anchor": "Background"
+                        },
+                        {
+                            "uri": "Qmac4neKbx1SQafdNZRCh26A9N1DQAtCMrvXmT8Dy1a8YU",
+                            "label": "Hidden",
+                            "anchor": "Background"
+                        }
+                    ],
+                    "token-id": 2,
+                    "lever-id": 0
+                }
+            },
+            {
+                "id": "Vitalik_Object",
+                "states": {
+                    "options": [
+                        {
+                            "uri": "QmVuCQ9Xsn1StGQSNSQ9spSNtWpzab1vDPciqxJqrqAb7x",
+                            "label": "Babeth",
+                            "anchor": "Background"
+                        },
+                        {
+                            "uri": "QmcYvucR88Rcoe3X8osAMGdAfY2nyxjJybGAncwihyqDh5",
+                            "label": "BirthdayCake",
+                            "anchor": "Background"
+                        },
+                        {
+                            "uri": "Qmac4neKbx1SQafdNZRCh26A9N1DQAtCMrvXmT8Dy1a8YU",
+                            "label": "Hidden",
+                            "anchor": "Background"
+                        }
+                    ],
+                    "token-id": 1,
+                    "lever-id": 4
+                }
+            },
+            {
+                "id": "Fire",
+                "color": {
+                    "alpha": {
+                        "token-id": 1,
+                        "lever-id": 5
+                    }
+                },
+                "uri": "QmesezpWWKn7RW9TZgCeWUJr43HCSNMhUSQe1JBXeYWmKq",
+                "label": "NORMAL",
+                "anchor": "Background"
+            },
+            {
+                "id": "Butterfly",
+                "states": {
+                    "options": [
+                        {
+                            "uri": "QmWpozskWmRY36ywuD5CtjhLS6uffvcHHyxM1gvXV8ZNCx",
+                            "label": "Normal A",
+                            "anchor": "Background",
+                            "relative-position": {
+                                "x": {
+                                    "token-id": 1,
+                                    "lever-id": 7
+                                },
+                                "y": {
+                                    "token-id": 1,
+                                    "lever-id": 8
+                                }
+                            }
+                        },
+                        {
+                            "uri": "QmetUUSok6BVT4cg1ignyWFL9WdeNtbzCNmmSd4VzxGVjo",
+                            "label": "Normal B",
+                            "anchor": "Background",
+                            "relative-position": {
+                                "x": {
+                                    "token-id": 1,
+                                    "lever-id": 7
+                                },
+                                "y": {
+                                    "token-id": 1,
+                                    "lever-id": 8
+                                }
+                            }
+                        },
+                        {
+                            "uri": "QmcSfNuFQdMEyXBC55hXs9Rsase6joCNTApyvRWXSBdMmx",
+                            "label": "Normal C",
+                            "anchor": "Background",
+                            "relative-position": {
+                                "x": {
+                                    "token-id": 1,
+                                    "lever-id": 7
+                                },
+                                "y": {
+                                    "token-id": 1,
+                                    "lever-id": 8
+                                }
+                            }
+                        },
+                        {
+                            "uri": "QmbLroWeDqEcBczgHbdEPQytEVuNMFYaPFKRzhyymAGn2f",
+                            "label": "Normal D",
+                            "anchor": "Background",
+                            "relative-position": {
+                                "x": {
+                                    "token-id": 1,
+                                    "lever-id": 7
+                                },
+                                "y": {
+                                    "token-id": 1,
+                                    "lever-id": 8
+                                }
+                            }
+                        }
+                    ],
+                    "token-id": 1,
+                    "lever-id": 6
+                }
+            }
+        ]
+    },
+    "image": "QmUdYaBVQxx7JZyDujB9okXzHUJimC9LPEvieSv68nZzfm"
+}

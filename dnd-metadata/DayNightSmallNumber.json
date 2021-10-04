@@ -1,0 +1,15 @@
+{
+    "name": "The smaller number NFT",
+    "description": "The smaller number NFT  The smaller number NFT The smaller number NFT The smaller number NFT ",
+    "image": "https://gateway.pinata.cloud/ipfs/Qmf2Wy6udRSpefY9Q5ATR6fNRpf7ifPGfxrwkESLNopY3g",
+    "attributes": [
+        {
+            "trait_type": "Strength",
+            "value": 4
+        },
+        {
+            "trait_type": "Dexterity",
+            "value": 45
+        }
+    ]
+}

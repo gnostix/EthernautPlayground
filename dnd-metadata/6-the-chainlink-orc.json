@@ -1,0 +1,35 @@
+{
+    "name": "The Chainlink Orc",
+    "description": "lalala",
+    "image": "https://gateway.pinata.cloud/ipfs/QmSJmHwnwDMyUbYpe8VGbiYYaq6bj3qLbmVf48JdNYSArV/knight.jpeg",
+    "attributes": [
+        {
+            "trait_type": "Strength",
+            "value": 2
+        },
+        {
+            "trait_type": "Dexterity",
+            "value": 91
+        },
+        {
+            "trait_type": "Constitution",
+            "value": 74
+        },
+        {
+            "trait_type": "Intelligence",
+            "value": 82
+        },
+        {
+            "trait_type": "Wisdom",
+            "value": 18
+        },
+        {
+            "trait_type": "Charisma",
+            "value": 70
+        },
+        {
+            "trait_type": "Experience",
+            "value": 0
+        }
+    ]
+}

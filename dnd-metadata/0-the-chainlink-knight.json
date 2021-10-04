@@ -1,0 +1,35 @@
+{
+    "name": "The Chainlink Knight",
+    "description": "mia akomi prospatheia",
+    "image": "https://gateway.pinata.cloud/ipfs/QmSJmHwnwDMyUbYpe8VGbiYYaq6bj3qLbmVf48JdNYSArV/knight.jpeg",
+    "attributes": [
+        {
+            "trait_type": "Strength",
+            "value": 4
+        },
+        {
+            "trait_type": "Dexterity",
+            "value": 45
+        },
+        {
+            "trait_type": "Constitution",
+            "value": 62
+        },
+        {
+            "trait_type": "Intelligence",
+            "value": 87
+        },
+        {
+            "trait_type": "Wisdom",
+            "value": 38
+        },
+        {
+            "trait_type": "Charisma",
+            "value": 41
+        },
+        {
+            "trait_type": "Experience",
+            "value": 0
+        }
+    ]
+}

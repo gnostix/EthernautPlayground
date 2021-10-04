@@ -1,0 +1,15 @@
+{
+    "name": "The bigger number NFT",
+    "description": "The bigger number NFT  The bigger number NFT The bigger number NFT The bigger number NFT ",
+    "image": "https://gateway.pinata.cloud/ipfs/QmNUS8j6B7VdJtvRqWjBbNG5sJV6C4xWsaXjQwBk1LAKjr",
+    "attributes": [
+        {
+            "trait_type": "lala",
+            "value": 4
+        },
+        {
+            "trait_type": "koko",
+            "value": 45
+        }
+    ]
+}
