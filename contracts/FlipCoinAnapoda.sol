@@ -59,7 +59,7 @@ contract FlipCoinAnapoda is Ownable {
     }
 
     function callFlipCoinContract(address addr) public {
-        CoinFlip c = CoinFlip(addr);
+        CoinFlip2 c = CoinFlip2(addr);
         bool _guess = flipMe();
         bool _result = c.flip(_guess);
 
@@ -90,7 +90,7 @@ contract FlipCoinAnapoda is Ownable {
     }
 }
 
-interface CoinFlip {
+interface CoinFlip2 {
     function flip(bool _guess) external returns (bool);
 }
 
