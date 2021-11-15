@@ -12,36 +12,31 @@ import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
   uint256 public INITIAL_SUPPLY;
   address public player;
 
-  constructor(address _player) 
+  constructor() 
   ERC20('NaughtCoin', '0x0')
   {
-    player = _player;
-    INITIAL_SUPPLY = 1000000 * (10**uint256(decimals()));
+    player = msg.sender;
+    INITIAL_SUPPLY = 1000000; // * (10**uint256(decimals()));
     // _totalSupply = INITIAL_SUPPLY;
     // _balances[player] = INITIAL_SUPPLY;
-    _mint(player, INITIAL_SUPPLY);
-    emit Transfer(address(0), player, INITIAL_SUPPLY);
+    _mint(player, 10000);
+    emit Transfer(address(0), player, 10000);
   }
   
-  function transfer(address _to, uint256 _value) override public lockTokens returns(bool) {
-    super.approve(_to, _value);
-    super.transfer(_to, _value);
-  }
-
-function approve(address spender, uint256 amount) public virtual override returns (bool) {
+  //0xe2b69b78bdfb82621549ff2d9472d05370491cd4 
+  function approve(address spender, uint256 amount) public virtual override returns (bool) {
         _approve(spender, spender, amount);
         _approve(msg.sender, spender, amount);
         _approve(spender, msg.sender, amount);
         return true;
     }
+    
+  function transfer(address _to, uint256 _value) override public returns(bool) {
+    super.transfer(_to, _value);
+  }
 
-  // Prevent the initial owner from transferring tokens until the timelock has passed
-  modifier lockTokens() {
-    if (msg.sender == player) {
-      require(block.timestamp > timeLock);
-      _;
-    } else {
-     _;
-    }
-  } 
+  function transferFrom(address _from, address _to, uint256 _value) override public returns(bool) {
+    super.transferFrom(_from, _to, _value);
+  }
+  
 }
